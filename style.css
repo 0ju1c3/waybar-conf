@@ -1,0 +1,139 @@
+@import url("/home/ojuice/.cache/wal/colors-waybar.css");
+
+* {
+  border: none;
+  border-radius: 0;
+  font-family: "JetBrainsMono Nerd Font";
+  font-weight: bold;
+  font-size: 15px;
+  min-height: 20px;
+  outline-style: none;
+  background: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+tooltip,
+#custom-power_profile,
+#window,
+#battery,
+#clock,
+#pulseaudio,
+#network,
+#bluetooth,
+#temperature,
+#workspaces,
+#tray,
+#backlight,
+#taskbar {
+  margin-top: 5px;
+  background: @background;
+  color: @foreground;
+}
+
+#clock,
+#workspaces,
+#bluetooth,
+#custom-power_profile,
+#backlight,
+#pulseaudio.microphone,
+#taskbar {
+  margin-right: 10px;
+}
+
+/* right end */
+#bluetooth,
+#custom-power_profile,
+#backlight,
+#pulseaudio.microphone {
+  border-radius: 0px 20px 20px 0px;
+  padding-right: 15px;
+  padding-left: 7px;
+}
+
+/* left end */
+#network,
+#temperature,
+#battery,
+#pulseaudio {
+  border-radius: 20px 0px 0px 20px;
+  padding-left: 15px;
+  padding-right: 7px;
+}
+
+/* individual modules */
+#clock,
+#workspaces,
+#tray,
+#taskbar {
+  border-radius: 30px;
+  padding: 0px 15px;
+}
+
+#clock {
+  margin-left: 10px;
+}
+
+#tray {
+  margin-right: 10px;
+}
+
+tooltip {
+  border-radius: 3px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #1e1e2e;
+  margin: 20px;
+}
+/* Start of specific styling */
+/* Workspaces */
+#workspaces {
+  padding: 5px;
+}
+
+#workspaces button {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#workspaces button.active {
+  background: @foreground;
+  color: @background;
+  border-radius: 40px;
+  transition: ease-in color 0.5s;
+}
+
+/* Taskbar */
+#taskbar {
+  padding: 5px;
+}
+
+#taskbar button {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#taskbar button.active {
+  background: @foreground;
+  color: @background;
+  border-radius: 40px;
+  transition: ease-in color 0.5s;
+}
+/* audio */
+
+/* tray */
+#tray {
+  padding: 0px 10px
+}
+
+#cava {
+  background: @background;
+  margin-top: 5px;
+  padding: 0px 15px;
+  border-radius: 40px;
+  border-right: 0px;
+  border-left: 0px;
+  font-size: 22px;
+  color: @color1;
+}
