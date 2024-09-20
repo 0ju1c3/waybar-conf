@@ -22,7 +22,8 @@
     "format": "{}",
     "max-length": 35,
     "rewrite": {
-      "": "Hyprland"
+      "": "Home",
+      "~": "Alacritty"
     },
     "separate-outputs": true,
   },
@@ -99,7 +100,7 @@
   "pulseaudio": {
     "format": "{icon}  {volume}%",
     "format-bluetooth": "{volume}% {icon} {format_source}",
-    "format-bluetooth-muted": " {icon} {format_source}",
+    "format-bluetooth-muted": "  {icon} {format_source}",
     "format-muted": " {format_source}",
     "format-icons": {
       "headphone": "",
